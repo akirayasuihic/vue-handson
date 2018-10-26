@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Conditionals</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+
+    <div id="app">
+      <table barder="1" cellspacing="0" cellpadding="5" bordercolor="#333333">
+        <tr>
+          <th bgcolor="#00008b"><font color="#FFFFFF">項目名</font></th>
+          <th bgcolor="#00008b" width="150"><font color="#FFFFFF">説明</font></th>
+        </tr>
+        <tr>
+          <td bgcolor="#00bfff" nowrap>今日</td>
+          <td bgcolor="#FFFFFF" valign="top" width="150">
+            <p v-if="seen">{{ message }}</p>
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor="#00bfff" nowrap>現在時刻</td>
+          <td bgcolor="#FFFFFF" valign="top" width="150">
+            <p>{{ now }}</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
