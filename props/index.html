@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>component with props</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+
+    <div id="app">
+      <ol>
+        <todo-item
+          v-for="item in groceryList"
+          :todo="item"
+          :key="item.id">
+        </todo-item>
+      </ol>
+    </div>
+    <!-- https://vuejs.org/v2/guide/list.html#key -->
+    <script src="index.js"></script>
+  </body>
+</html>
